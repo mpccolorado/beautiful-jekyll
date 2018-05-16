@@ -1,16 +1,22 @@
 ---
 layout: page
 title: About me
-subtitle: Why you'd want to go on a date with me
+subtitle: Feel free to write me if I can help you!
 ---
 
-My name is Inigo Montoya. I have the following qualities:
+My name is Martín Caballero. I am a system software engineer that:
 
-- I rock a great mustache
-- I'm extremely loyal to my family
+- Love to make cool projects programming on different languages
+- Love to learn new stuff trying to keep up with the hot tech
 
-What else do you need?
+### My background
 
-### my history
+Information Systems Engineering, graduated from the National Technologic University of my town.
 
-To be honest, I'm having some trouble remembering right now, so why don't you just watch [my movie](http://en.wikipedia.org/wiki/The_Princess_Bride_%28film%29) and it will answer **all** your questions.
+I am an advanced grails developer, technology that I like a lot and have been doing for a long time. I like to work on the frontend as well, feeling really confortable using AngularJS and Angular 2+ and frameworks like Bootstrap and Ionic. I also worked on native applications on Android and IOS using Swift (but very basic knowledge).
+
+I am a freelancer since three years ago, and I have two projects on my own with a couple of happy clients using them.
+
+From Villa María, Córdoba, Argentina.
+
+I helped on the development of a couple of open source projects like the grails-field plugin, but I feel I can do it much better on the future involving a little more on other projects as well.
