@@ -1,0 +1,277 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>reveal.js – The HTML Presentation Framework</title>
+
+		<meta name="description" content="A framework for easily creating beautiful presentations using HTML">
+		<meta name="author" content="Hakim El Hattab">
+
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/black.css" id="theme">
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+	</head>
+
+	<body>
+
+		<div class="reveal">
+
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides">
+				<section>
+					<h1>Sistema de seguimiento de planificaciones</h1>
+					<h3>Contenidos desarrollados y nivel de enseñanza</h3>
+					<p>
+						<small>¿Cómo medir de forma certera ambos conceptos?</small>
+					</p>
+				</section>
+
+				<section>
+					<section>
+						<h2>Planificaciones</h2>
+						<p>
+							El docente debe especificar qué temas va a desarrollar en las distintas clases
+						</p>
+					</section>
+					<section>
+						<h2>Objetivos</h2>
+						<p class="fragment">Mejorar la organización de las clases</p>
+						<p class="fragment">Tener una guía de desarrollo</p>
+						<p class="fragment">Cumplir con los contenidos mínimos</p>
+					</section>
+					<section>
+						<h2>Hoy en día</h2>
+						<p>
+							El seguir con la planificación corre por cuenta del docente. No hay un sistema que le recuerde que es lo que tiene que dar tal día.
+						</p>
+						<h4 class="fragment">Desventajas</h4>
+						<p class="fragment">Más difícil de organizarse</p>
+						<p class="fragment">No hay un proceso que motive al docente a seguir con la planificación</p>
+						<p class="fragment">El alumno debe seguir el mismo proceso manual para verificar la planificación</p>
+					</section>
+				</section>
+				<section>
+					<section>
+						<h2>Revisión de planificaciones</h2>
+						<p>
+							Poder conocer los resultados entre lo que se planificó y lo que se desarrolló en clases
+						</p>
+					</section>
+					<section>
+						<h2>Objetivos deseados</h2>
+						<p class="fragment">Contrastar planificación vs temas desarrollados en clases</p>
+						<p class="fragment">Porcentaje desarrollado</p>
+						<p class="fragment">Nivel de enseñanza</p>
+						<p class="fragment">Reconocer puntos débiles</p>
+						<p class="fragment">Reconocer puntos fuertes</p>
+						<p class="fragment">Mejora continua</p>
+					</section>
+					<section>
+						<h2>Idea</h2>
+						<p>
+							Que el docente tenga las herramientas necesarias para poder reconocer cuáles son sus fortalezas y debilidades.
+						</p>
+						<p>
+							Que pueda poner énfasis en mejorar el desarrollo de ciertos temas
+						</p>
+						<p>
+							Que la retroalimentación sea clase a clase
+						</p>
+					</section>
+					<section>
+						<h2>Hoy en día</h2>
+						<p>
+							Libro de temas: El docente escribe, mediante texto, qué es lo que se desarrolló en una clase determinada
+						</p>
+					</section>
+					<section>
+						<p>
+							Problemas
+						</p>
+						<p class="fragment">La <strong>revisión</strong> es <strong>complicada</strong> porque hay que analizar <strong>texto contra texto</strong> de forma <strong>manual</strong></p>
+						<p class="fragment">Se verifica únicamente lo que el profesor <strong>dijo que dió</strong></p>
+						<p class="fragment">El <strong>alumno no participa</strong> en el proceso</p>
+						<p class="fragment">No se establece con exactitud cuáles fueron los <strong>temas que no se dieron</strong></p>
+						<p class="fragment">No se evalúa la <strong>calidad de cada clase</strong></p>
+					</section>
+				</section>
+				<section>
+					<section>
+						<h2>Software de seguimiento</h2>
+						<p>Invertir trabajo en el desarrollo de un software que simplifique el proceso</p>
+					</section>
+					<section>
+						<h2>El docente debería</h2>
+						<p class="fragment">En la planificación:</p>
+						<p class="fragment">Cargar las planificaciones con unidades y temas</p>
+						<p class="fragment">Seleccionar los temas que va a dar en cada clase</p>
+						<p class="fragment">En las clases:</p>
+						<p class="fragment">Seleccionar los temas que pudo desarrollar</p>
+					</section>
+					<section>
+						<h2>El alumno debería</h2>
+						<p class="fragment">En las clases:</p>
+						<p class="fragment">Seleccionar los temas que el docente desarrolló</p>
+						<p class="fragment">Ponerle puntaje a cada tema expuesto</p>
+						<p class="fragment">(Se podría tomar un conjunto representativo de alumnos que participaron de la clase)</p>
+					</section>
+				</section>
+				<section>
+					<section>
+						<h2>1º Planificar</h2>
+						<p>
+							El docente debe seleccionar todos los temas de la materia que va a dictar en clases
+						</p>
+					</section>
+					<section>
+						<video data-autoplay src="img/planificación.mov"></video>
+					</section>
+					<section>
+						<h2>Ventajas</h2>
+						<p class="fragment">
+							Comparación en % con años anteriores
+						</p>
+						<p class="fragment">
+							Los temas pueden ser marcados por otras asignaturas como necesarios
+						</p>
+					</section>
+					<section>
+						<h2>2º Asignar temas a clases</h2>
+						<p>
+							El docente debe especificar para cada clase qué temas dará
+						</p>
+					</section>
+					<section>
+						<h2>Ventajas</h2>
+						<p>
+							El sistema puede ir recordándole al docente los temas a dar en la clase siguiente
+						</p>
+					</section>
+					<section>
+						<p>
+							<image data-src="img/clase siguiente docente.png"></image>
+						</p>
+					</section>
+					<section>
+						<p>
+							Los alumnos pueden ser notificados con el sistema sobre los temas de la próxima clase
+						</p>
+					</section>
+					<section>
+						<p>
+							<image data-src="img/clase siguiente alumno.png"></image>
+						</p>
+					</section>
+					<section>
+						<p>
+							El docente debe indicar si pudo dar todos los temas planificados para tal clase
+						</p>
+					</section>
+					<section>
+						<p>
+							<image data-src="img/clase 3 finalizada - docente 1.png"></image>
+						</p>
+					</section>
+					<section>
+						<p>
+							Se le preguntará a un grupo representativo de alumnos sobre la clase en cuestión
+						</p>
+					</section>
+					<section>
+						<video data-autoplay src="img/evaluación del alumno - clase.mov"></video>
+					</section>
+					<section>
+						<p>
+							Si se le hace la encuesta a 5 alumnos se puede determinar:
+						</p>
+						<p class="fragment">
+							Si el profesor realmente dió el tema en clase
+						</p>
+						<p class="fragment">
+							Se puede sacar un promedio de la calidad didáctica de cada tema
+						</p>
+						<p class="fragment">
+							Se puede obtener un feedback del alumno, clase a clase
+						</p>
+					</section>
+					<section>
+						<p>Finalmente el docente hará una evaluación sobre los resultados de las encuestas</p>
+					</section>
+					<section>
+						<video data-autoplay src="img/evaluación docente - clase.mov"></video>
+					</section>
+				</section>
+				<section>
+					<section>
+						<h1>En síntesis</h1>
+						<p class="fragment">Recopilar información sobre calidad de enseñanza</p>
+						<p class="fragment">Retroalimentación clase a clase</p>
+						<p class="fragment">Consejos para mejorar</p>
+						<p class="fragment">Logrando así una mejora continua</p>
+					</section>
+					<section>
+						<q>
+							Al remover la culpabilidad se quita el miedo. Al quitar el miedo, se permite la honestidad; y la honestidad permite la prevención
+						</q>
+						<i>- The Devops Handbook</i>
+					</section>
+					<section>
+						<h1>MUCHAS GRACIAS POR SU ATENCIÓN</h1>
+					</section>
+				</section>
+			</div>
+
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+
+		<script>
+
+			// More info https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+
+				transition: 'slide', // none/fade/slide/convex/concave/zoom
+
+				// More info https://github.com/hakimel/reveal.js#dependencies
+				dependencies: [
+					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'plugin/search/search.js', async: true },
+					{ src: 'plugin/zoom-js/zoom.js', async: true },
+					{ src: 'plugin/notes/notes.js', async: true }
+				]
+			});
+
+		</script>
+
+	</body>
+</html>
