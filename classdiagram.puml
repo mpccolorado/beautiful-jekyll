@@ -1,0 +1,30 @@
+@startuml
+
+class VendingMachine {
+ String code
+ StockItem[] stockItems
+ Sale[] sales
+}
+
+class StockItem {
+ Product product
+ Integer count
+}
+
+class Product {
+ String name
+ BigDecimal price
+}
+
+class Sale {
+ Product product
+ Integer count
+ BigDecimal price
+}
+
+VendingMachine o--> StockItem
+VendingMachine o-> Sale
+StockItem -> Product
+Sale -> Product
+
+@enduml
