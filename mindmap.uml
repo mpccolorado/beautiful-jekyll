@@ -1,0 +1,60 @@
+@startmindmap
++ OAuth2
+++ Roles
++++ Resource owner
+++++ User who authorizes an application to access their account
++++ Client
+++++ Application that wants to access the user's account
++++++ Register: Application name, website, redirect URI or callback URL
+++++++ Receives "Client credentials"
++++++++ Client identifier
+++++++++ Public
++++++++ Client secret
+++++++++ Private
++++ Resources Server
+++++ Hosts the protected user accounts
++++ Authorization Server
+++++ Verifies the user's identity
+++++ Issues access token to the application
+++ Authorization Grants
++++ 4 types
+++++ Authorization code
++++++ Server-side applications
+++++++ The client_secret confidentiality is guaranteed
++++++ Steps
+++++++ Authorization code link
++++++++ API Authorization Endpoint
+++++++++ i.e: https://cloud.digitalocean.com/v1/oauth/authorize
++++++++ client_id
++++++++ redirect_uri
++++++++ response_type=code
++++++++ scope=read
+++++++ User Authorizes Application
++++++++ The user logs in into the service
++++++++ Accepts the invitation
+++++++ Application receives Authorization code
++++++++ On the redirect_uri
++++++++ With an AUTHORIZATION_CODE
+++++++ Application requests Access Token to the API
++++++++ With
+++++++++ AUTHORIZATION_CODE
+++++++++ CLIENT_ID
+++++++++ CLIENT_SECRET
+++++++++ CALLBACK_URL
+++++++ Application receives Access Token
++++++++ {"access_token": "ACCESS_TOKEN", "token_type": "bearer", "expires_in": 2592000, "refresh_token": "REFRESH_TOKEN", "scope": "read", "uid": 100101, "info": {"name": "Martín Caballero", "email": "mpccolorado@gmail.com"}}
+++++ Implicit
++++++ Used with apps that runs on user's device
+++++++ Mobile Apps
+++++++ Web applications
++++++ client_secret not guaranteed
++++++ Does not support refresh tokens
+++++ Resource Owner Password Credentials
++++++ Trusted Applications
+++++++ The user provides
++++++++ Service credentials
+++++++++ Username
+++++++++ Password
+++++ Client credentials
++++++ Used With Applications API access
+@endmindmap
