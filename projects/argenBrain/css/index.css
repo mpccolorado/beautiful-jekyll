@@ -5,3 +5,58 @@
 .column {
     flex: 50%;
 }
+
+.center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+.slides {
+    color: white;
+}
+
+.reveal h1, .reveal h2, .reveal h3, .reveal h4, .reveal h5, .reveal h6 {
+    color: white;
+}
+
+.reveal section img {
+    background: none;
+    border: none;
+    box-shadow: none;
+}
+
+strong {
+    color: #085E85;
+}
+
+strong.white {
+    color: white;
+    font-weight: bold;
+}
+
+section#section-1_1 {
+    margin-left: -100px;
+}
+
+section#section-1_1 h2 {
+    position: absolute;
+    top: -100px;
+    left: 130px;
+    width: 54%;
+    font-size: 100px;
+    font-weight: bold;
+}
+section#section-1_1 img {
+    position: fixed;
+    top: -50%;
+    right: -40%;
+}
+section#section-1_1 ul {
+    margin-top: 140px;
+}
+
+.column .center p.professionals-text {
+    margin-top: -100px !important;
+}
